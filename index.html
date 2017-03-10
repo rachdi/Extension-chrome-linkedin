@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<meta charset="UTF-8">
+	<title>Extension recruteur Taleez</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+
+		<h2 class="title">Profil candidat</h2>
+		<form id="add">
+			<div class="form-group">
+				<label for="name">Nom: </label>
+				<input id="name" name="name" type="text" class="form-control"  >
+			</div>
+			<div class="form-group">
+				<label for="headline">Intitulé: </label>
+				<input id="headline" name="headline" type="text" class="form-control" >  
+			</div>
+			<div class="form-group">
+				<label for="linkedin">Profil linkedin: </label>
+				<input id="linkedin" name="linkedin" type="text" class="form-control">  
+			</div>
+			<div class="form-group">
+				<label for="mail">Email: </label>
+				<input id="mail" name="mail" type="text" class="form-control">  
+			</div>
+			<div class="form-group">
+				<label for="tel">Téléphone: </label>
+				<input id="tel" name="tel" type="text" class="form-control">  
+			</div>
+			<div class="form-group">
+				<label for="competence">Compétences professionnelles</label>
+				<input id="competence" name="competence" type="text" class="form-control">
+			</div>
+			<div class="form-group">
+				<div class="text-center col-md-12">
+					<input class="btn btn-success btn-lg" type="submit" value="Sauvegarder" id="save">
+					<span id="status-display"></span>
+				</div>
+			</div>
+		</form>
+		<div id="result"></div>
+	</div>
+	
+	<script src="axios.min.js"></script>
+	<script src="popup.js"></script>
+	
+</body>

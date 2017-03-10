@@ -1,0 +1,27 @@
+.container {
+	margin-right: 5em;
+	margin-left: 5em;
+}
+
+.title {
+	width: 6.5em;
+}
+
+body{
+	background-image: url("team.jpg");
+}
+
+label, .statusDisplay {
+	color: white;
+}
+
+.image {
+	float: right;
+	padding-left: 100%;
+	padding-right: 10%;
+	padding-top: 5%;
+}
+
+#saveDiv {
+	padding-bottom: 10%;
+}
