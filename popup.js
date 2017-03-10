@@ -51,17 +51,18 @@
 
 			})
 			.then(function (data) {
-				console.log(data);
+				popup.statusDisplay.innerHTML = 'Saved!';
+				window.setTimeout(window.close, 2000);
 			})
 			.catch(function (error) {
-				console.log(error);
+				popup.statusDisplay.innerHTML = 'Error saving: ';
 			});
 
 		},
 
 		toLoad: function() {
 
-			window.addEventListener('load', function(e) {
+			window.addEventListener('load', function(event) {
 
 				popup.statusDisplay = document.getElementById('status-display');
 
